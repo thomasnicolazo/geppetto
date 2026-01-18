@@ -13,7 +13,7 @@ client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 # private_key_path = '/path/to/private_key'
 # private_key = paramiko.RSAKey.from_private_key_file(private_key_path)
 # ssh.connect('hostname', username='username', pkey=private_key)
-client.connect('scp721', username='thomas', password='test')
+client.connect('host', username='thomas', password='redastair')
 stdin, stdout, stderr = client.exec_command('ls')
 print(stdout.read().decode())
 client.close()
