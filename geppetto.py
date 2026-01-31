@@ -6,6 +6,7 @@ import argparse
 import yaml
 
 import logger.logger_formater as formater
+from engine.engine import Engine
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
